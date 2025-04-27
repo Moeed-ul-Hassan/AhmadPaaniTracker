@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Ahmad Paani Waala</title>
+  <style>
+    :root {
+      --primary: #38BDF8;
+      --primary-dark: #0EA5E9;
+      --primary-bg: #0F172A;
+      --secondary-bg: #1E293B;
+      --text-light: #F8FAFC;
+      --text-muted: #94A3B8;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--primary-bg);
+      color: var(--text-light);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .error-container {
+      max-width: 800px;
+    }
+    
+    h1 {
+      font-size: 8rem;
+      color: var(--primary);
+      text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+      margin-bottom: 1rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+    
+    .droplet {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      background-color: var(--primary);
+      border-radius: 50% 50% 50% 0;
+      transform: rotate(-45deg);
+      margin: 0 auto 2rem;
+      animation: float 4s ease-in-out infinite;
+    }
+    
+    .droplet::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), transparent 30%);
+      border-radius: 50% 50% 50% 0;
+    }
+    
+    .ripple {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      border-radius: 50% 50% 50% 0;
+      border: 2px solid var(--primary);
+      transform: translate(-50%, -50%) rotate(45deg);
+      opacity: 0;
+      animation: ripple 2s infinite;
+    }
+    
+    .ripple:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+    
+    .ripple:nth-child(3) {
+      animation-delay: 1s;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(-45deg); }
+      50% { transform: translateY(-20px) rotate(-45deg); }
+    }
+    
+    @keyframes ripple {
+      0% { transform: translate(-50%, -50%) rotate(45deg) scale(0.3); opacity: 1; }
+      100% { transform: translate(-50%, -50%) rotate(45deg) scale(1.3); opacity: 0; }
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--primary);
+      color: var(--primary-bg);
+      text-decoration: none;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <div class="droplet-container">
+      <div class="droplet">
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+      </div>
+    </div>
+    
+    <h1>404</h1>
+    <h2>Oops! Water you looking for isn't here.</h2>
+    <p>The page you are trying to access might have been moved, deleted, or maybe it was never there to begin with. Let's get you back to our refreshing homepage.</p>
+    
+    <a href="/" class="btn">Back to Homepage</a>
+  </div>
+</body>
+</html>

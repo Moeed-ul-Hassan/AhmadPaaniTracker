@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Paani Waala - Premium Water Delivery in Kashmir</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-icons@0.299.0/font/lucide.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="loader-container">
+      <div class="droplet"></div>
+      <div class="droplet"></div>
+      <div class="droplet"></div>
+      <span class="loader-text font-poppins">Ahmad Paani Waala</span>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div id="page-content" class="page-content">
+    
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <i class="lucide-droplet text-primary"></i>
+          <h1 class="font-poppins">Ahmad Paani Waala</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-container">
+        <div class="mobile-menu-header">
+          <div class="logo">
+            <i class="lucide-droplet text-primary"></i>
+            <h1 class="font-poppins">Ahmad Paani Waala</h1>
+          </div>
+          <button id="mobile-menu-close" class="mobile-menu-close">
+            <i class="lucide-x"></i>
+          </button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#products" class="mobile-nav-link">Products</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#location" class="mobile-nav-link">Location</a></li>
+          <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <a href="tel:+911234567890" class="mobile-contact-btn">
+            <i class="lucide-phone"></i> Call Now
+          </a>
+          <a href="https://wa.me/911234567890" class="mobile-whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="water-pattern"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div id="hero-heading" class="hero-heading">
+            <h1 class="font-poppins">Pure <span class="text-primary">Mountain Water</span><br> Delivered to Your Door</h1>
+          </div>
+          <div id="hero-text" class="hero-text">
+            <p>Experience the refreshing taste of Kashmir's pristine mountain spring water with Ahmad Paani Waala's reliable delivery service. Pure, mineral-rich water available in various quantities.</p>
+          </div>
+          <div id="hero-buttons" class="hero-buttons">
+            <button id="order-btn" class="water-btn primary-btn">
+              Order Now <i class="lucide-shopping-cart"></i>
+            </button>
+            <a href="#contact" class="water-btn secondary-btn">
+              Contact Us <i class="lucide-phone"></i>
+            </a>
+          </div>
+        </div>
+        <div id="hero-image" class="hero-image animate-float">
+          <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pure Kashmir Water">
+          <div class="water-drop-1"></div>
+          <div class="water-drop-2"></div>
+          <div class="water-drop-3"></div>
+        </div>
+      </div>
+      <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+      <div class="section-container">
+        <div class="section-heading">
+          <h2 class="font-poppins">Our <span class="text-primary">Products</span></h2>
+          <p>Choose from our range of premium water products sourced from the pristine mountains of Kashmir.</p>
+        </div>
+        
+        <div class="products-grid">
+          <div class="water-card" data-product="small">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1606168094336-48f8b53f0486?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Small Bottle">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="font-poppins">Small Bottle</h3>
+                <span class="price-tag">10 Rs</span>
+              </div>
+              <p>500ml of pure Kashmir mountain water, perfect for individual consumption.</p>
+              <button class="water-btn" onclick="openOrderModal('small')">
+                Add to Order <i class="lucide-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="water-card" data-product="big">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1616118132534-381148898bb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Big Bottle">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="font-poppins">Big Bottle</h3>
+                <span class="price-tag">20 Rs</span>
+              </div>
+              <p>1.5L bottle ideal for families or daily hydration needs with mineral benefits.</p>
+              <button class="water-btn" onclick="openOrderModal('big')">
+                Add to Order <i class="lucide-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="water-card" data-product="truck">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Full Truck">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="font-poppins">Full Truck</h3>
+                <span class="price-tag">30 Rs</span>
+              </div>
+              <p>Bulk water delivery service for events, businesses or large households.</p>
+              <button class="water-btn" onclick="openOrderModal('truck')">
+                Add to Order <i class="lucide-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="products-cta">
+          <button class="water-btn primary-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+            Place Bulk Order
+            <i class="lucide-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pure Kashmir water source" class="main-image">
+            <div class="about-feature-card">
+              <div class="feature-icon">
+                <i class="lucide-medal text-primary"></i>
+              </div>
+              <div class="feature-text">
+                <h4 class="font-poppins">Premium Quality</h4>
+                <p>Our water comes from the highest peaks of Kashmir, ensuring purity and freshness.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-content">
+            <h2 class="font-poppins">About <span class="text-primary">Ahmad Paani Waala</span></h2>
+            <p>Ahmad has been providing the freshest water to the people of Kashmir for over 15 years. What started as a small family business has grown into a trusted water delivery service that maintains the highest standards of quality.</p>
+            <p>Our water comes directly from the pristine mountain springs of Kashmir, known for their mineral-rich composition and refreshing taste. Every bottle is carefully processed and sealed to maintain its natural properties.</p>
+            
+            <div class="features-grid">
+              <div class="feature-box">
+                <i class="lucide-mountain text-primary"></i>
+                <h4 class="font-poppins">Mountain Sourced</h4>
+                <p>Direct from natural springs</p>
+              </div>
+              <div class="feature-box">
+                <i class="lucide-badge-check text-primary"></i>
+                <h4 class="font-poppins">100% Pure</h4>
+                <p>No chemicals or additives</p>
+              </div>
+              <div class="feature-box">
+                <i class="lucide-truck text-primary"></i>
+                <h4 class="font-poppins">Quick Delivery</h4>
+                <p>Same day across Kashmir</p>
+              </div>
+              <div class="feature-box">
+                <i class="lucide-heart text-primary"></i>
+                <h4 class="font-poppins">Customer Trust</h4>
+                <p>Serving thousands daily</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+      <div class="section-container">
+        <div class="section-heading">
+          <h2 class="font-poppins">Our <span class="text-primary">Location</span></h2>
+          <p>Based in the heart of Kashmir, we deliver across the region with speed and reliability.</p>
+        </div>
+        
+        <div class="location-grid">
+          <div class="location-info">
+            <div class="info-card">
+              <h3 class="font-poppins">Delivery Areas</h3>
+              <ul class="delivery-areas">
+                <li>
+                  <i class="lucide-check-circle text-primary"></i>
+                  <span>Srinagar City - 30 minute delivery</span>
+                </li>
+                <li>
+                  <i class="lucide-check-circle text-primary"></i>
+                  <span>Gulmarg - Same day delivery</span>
+                </li>
+                <li>
+                  <i class="lucide-check-circle text-primary"></i>
+                  <span>Pahalgam - Same day delivery</span>
+                </li>
+                <li>
+                  <i class="lucide-check-circle text-primary"></i>
+                  <span>Sonamarg - Next day delivery</span>
+                </li>
+                <li>
+                  <i class="lucide-check-circle text-primary"></i>
+                  <span>Other regions - Contact for details</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="info-card">
+              <h3 class="font-poppins">Business Hours</h3>
+              <div class="business-hours">
+                <div class="hours-item">
+                  <h4 class="text-primary">Weekdays</h4>
+                  <p>8:00 AM - 8:00 PM</p>
+                </div>
+                <div class="hours-item">
+                  <h4 class="text-primary">Weekends</h4>
+                  <p>9:00 AM - 6:00 PM</p>
+                </div>
+                <div class="hours-item full-width">
+                  <h4 class="text-primary">Emergency Delivery</h4>
+                  <p>Available 24/7 (Additional charges apply)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="location-image">
+            <img src="https://images.unsplash.com/photo-1566837469429-89f83e7a51ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Beautiful landscape of Kashmir">
+            <div class="location-card">
+              <div class="location-icon">
+                <i class="lucide-map-pin text-primary"></i>
+              </div>
+              <div class="location-text">
+                <h4 class="font-poppins">Main Office</h4>
+                <p>123 Dal Lake Road, Srinagar, Kashmir</p>
+                <p>Phone: +91 12345 67890</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="section-container">
+        <div class="section-heading">
+          <h2 class="font-poppins">Customer <span class="text-primary">Feedback</span></h2>
+          <p>What our satisfied customers say about Ahmad Paani Waala services.</p>
+        </div>
+        
+        <div class="testimonial-slider-container">
+          <div id="testimonial-slider" class="testimonial-slider">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                  <i class="lucide-user"></i>
+                </div>
+                <div class="testimonial-person">
+                  <h4 class="font-poppins">Farooq Ahmad</h4>
+                  <p>Srinagar Resident</p>
+                </div>
+              </div>
+              <p class="testimonial-content">"Ahmad's water delivery service has been a blessing for my family. The water is always fresh and delivered on time, even during harsh winter months."</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                  <i class="lucide-user"></i>
+                </div>
+                <div class="testimonial-person">
+                  <h4 class="font-poppins">Mehreen Khan</h4>
+                  <p>Business Owner</p>
+                </div>
+              </div>
+              <p class="testimonial-content">"For my cafe, I order the full truck delivery weekly. The consistency and quality of service Ahmad provides is unmatched in the region."</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                  <i class="lucide-user"></i>
+                </div>
+                <div class="testimonial-person">
+                  <h4 class="font-poppins">Bilal Shah</h4>
+                  <p>Tourist Guide</p>
+                </div>
+              </div>
+              <p class="testimonial-content">"I recommend Ahmad's water to all my tourists. The small bottles are perfect for day trips around Kashmir's beautiful landscapes."</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                  <i class="lucide-user"></i>
+                </div>
+                <div class="testimonial-person">
+                  <h4 class="font-poppins">Sameera Bhat</h4>
+                  <p>Hotel Manager</p>
+                </div>
+              </div>
+              <p class="testimonial-content">"We've been using Ahmad's water delivery for our hotel guests for years. The quality and reliability have never disappointed us."</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                  <i class="lucide-user"></i>
+                </div>
+                <div class="testimonial-person">
+                  <h4 class="font-poppins">Irfan Lone</h4>
+                  <p>Local Resident</p>
+                </div>
+              </div>
+              <p class="testimonial-content">"The delivery is always prompt and the water tastes so pure. It's definitely better than any other bottled water in the market."</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          
+          <button id="testimonial-prev" class="testimonial-nav-btn prev-btn">
+            <i class="lucide-chevron-left"></i>
+          </button>
+          <button id="testimonial-next" class="testimonial-nav-btn next-btn">
+            <i class="lucide-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="section-heading">
+          <h2 class="font-poppins">Contact <span class="text-primary">Us</span></h2>
+          <p>Have questions or want to place an order? Reach out to us through any of these channels.</p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-form-container">
+            <div class="form-card">
+              <h3 class="font-poppins">Send a Message</h3>
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="water-btn primary-btn">
+                  Send Message <i class="lucide-send"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          
+          <div class="contact-info">
+            <div class="info-card">
+              <h3 class="font-poppins">Quick Contact</h3>
+              <div class="contact-items">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lucide-phone text-primary"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Phone</h4>
+                    <p>+91 12345 67890</p>
+                    <p>+91 98765 43210</p>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lucide-mail text-primary"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Email</h4>
+                    <p>ahmad@paaniwaala.com</p>
+                    <p>orders@paaniwaala.com</p>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lucide-map-pin text-primary"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Address</h4>
+                    <p>123 Dal Lake Road, Srinagar,</p>
+                    <p>Jammu & Kashmir, India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <h3 class="font-poppins">Follow Us</h3>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <div class="footer-logo">
+              <i class="lucide-droplet text-primary"></i>
+              <h3 class="font-poppins">Ahmad Paani Waala</h3>
+            </div>
+            <p>Delivering pure Kashmir mountain water to your doorstep since 2008.</p>
+            <div class="footer-social">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          
+          <div class="footer-links">
+            <h4 class="font-poppins">Quick Links</h4>
+            <ul>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#location">Locations</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-links">
+            <h4 class="font-poppins">Services</h4>
+            <ul>
+              <li><a href="#">Home Delivery</a></li>
+              <li><a href="#">Bulk Orders</a></li>
+              <li><a href="#">Business Supply</a></li>
+              <li><a href="#">Event Supply</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-contact">
+            <h4 class="font-poppins">Contact Info</h4>
+            <ul class="contact-list">
+              <li>
+                <i class="lucide-map-pin text-primary"></i>
+                <span>123 Dal Lake Road, Srinagar, Kashmir</span>
+              </li>
+              <li>
+                <i class="lucide-phone text-primary"></i>
+                <span>+91 12345 67890</span>
+              </li>
+              <li>
+                <i class="lucide-mail text-primary"></i>
+                <span>ahmad@paaniwaala.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Ahmad Paani Waala. All rights reserved.</p>
+          <p>Made with <span class="heart">❤</span> by zylox by moeed mirza</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/911234567890" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <i class="lucide-chevron-up"></i>
+    </button>
+
+    <!-- Order Modal -->
+    <div id="order-modal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-container">
+        <div class="modal-header">
+          <h2 class="font-poppins">Order <span class="text-primary">Water</span></h2>
+          <button id="modal-close" class="modal-close">
+            <i class="lucide-x"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="order-form" class="order-form">
+            <h3 id="selected-product-name" class="selected-product-name">Select Your Order</h3>
+            
+            <div class="product-quantities">
+              <div class="quantity-control">
+                <label>Small Bottles (10 Rs each)</label>
+                <div class="quantity-buttons">
+                  <button type="button" class="quantity-btn minus-btn" data-product="small">
+                    <i class="lucide-minus"></i>
+                  </button>
+                  <input type="number" id="small-quantity" name="smallQuantity" value="0" min="0" readonly>
+                  <button type="button" class="quantity-btn plus-btn" data-product="small">
+                    <i class="lucide-plus"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="quantity-control">
+                <label>Big Bottles (20 Rs each)</label>
+                <div class="quantity-buttons">
+                  <button type="button" class="quantity-btn minus-btn" data-product="big">
+                    <i class="lucide-minus"></i>
+                  </button>
+                  <input type="number" id="big-quantity" name="bigQuantity" value="0" min="0" readonly>
+                  <button type="button" class="quantity-btn plus-btn" data-product="big">
+                    <i class="lucide-plus"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="quantity-control">
+                <label>Full Truck (30 Rs)</label>
+                <div class="quantity-buttons">
+                  <button type="button" class="quantity-btn minus-btn" data-product="truck">
+                    <i class="lucide-minus"></i>
+                  </button>
+                  <input type="number" id="truck-quantity" name="truckQuantity" value="0" min="0" readonly>
+                  <button type="button" class="quantity-btn plus-btn" data-product="truck">
+                    <i class="lucide-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-divider"></div>
+            
+            <div class="order-total">
+              <h3>Total: <span id="order-total-amount">0</span> Rs</h3>
+            </div>
+            
+            <div class="form-group">
+              <label for="delivery-address">Delivery Address</label>
+              <input type="text" id="delivery-address" name="deliveryAddress" placeholder="Enter delivery address" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-number">Contact Number</label>
+              <input type="tel" id="contact-number" name="contactNumber" placeholder="Enter contact number" required>
+            </div>
+            
+            <button type="submit" class="water-btn primary-btn">
+              Place Order <i class="lucide-shopping-cart"></i>
+            </button>
+            
+            <div class="whatsapp-order">
+              <p>Or place your order directly via WhatsApp:</p>
+              <a href="https://wa.me/911234567890" class="whatsapp-order-btn">
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+      <div class="toast-icon">
+        <i id="toast-icon" class="lucide-check-circle"></i>
+      </div>
+      <div class="toast-content">
+        <h4 id="toast-title">Success!</h4>
+        <p id="toast-message">Your action was completed successfully.</p>
+      </div>
+      <button id="toast-close" class="toast-close">
+        <i class="lucide-x"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Import GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Import scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
